@@ -23,18 +23,36 @@
       </div>
     </div>
     <form>
-      <div>Create an Intuit account</div>
-      <div>
-        <span>One account for everything Inuit, including Mint.</span>
-        <a>Learn more</a>
+      <div id="form-title">Create an Intuit account</div>
+      <div id="top-text">
+        <span>One account for everything Inuit, including Mint.</span><br />
+        <a>Learn more</a><br />
         <span>Already have an account? <a>Sign In</a></span>
       </div>
       <label for="email">Email address</label>
-      <input type="email" id="email" required />
+      <input
+        type="email"
+        id="email"
+        placeholder="You'll verify this later"
+        required
+      />
       <label for="phone">Phone <span>(recommended)</span></label>
-      <input type="number" id="phone" />
+      <input
+        type="number"
+        id="phone"
+        placeholder="Helps with lost passwords and security"
+      />
+      <span>Standard call, message, or data rates my apply</span>
+      <span>
+        We strongly recommend adding a phone number. This will help verify your
+        account and keep it safe.
+      </span>
       <label for="password">Password</label>
-      <input type="password" id="password" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Don't reuse an old password"
+      />
       <label for="conform-password">Confirm Password</label>
       <input type="password" id="confirm-password" />
       <input type="submit" value="Create Account" />
