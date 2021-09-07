@@ -4,6 +4,12 @@ body {
   justify-items: center;
   align-items: center;
   background-color: #eceef1;
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  color: #0077c5;
+  text-decoration: none;
 }
 
 /* Form */
@@ -13,6 +19,7 @@ form {
   padding: 30px;
   width: 380px;
   background-color: white;
+  font-size: 14px;
 }
 
 #form-title {
@@ -25,6 +32,7 @@ form {
   padding-bottom: 20px;
   color: #393a3d;
   text-align: center;
+  font-weight: 100;
 }
 
 label {
@@ -35,7 +43,7 @@ label {
 
 input {
   display: block;
-  height: 40px;
+  height: 34px;
   border: 1px solid #c1c5c8;
   padding: 0 6px 0 8px;
   font-size: 16px;
@@ -43,6 +51,22 @@ input {
   min-width: 160px;
   border-radius: 3px;
   line-height: 1.3em;
+}
+
+input:focus-visible,
+input:active {
+  outline: none !important;
+  border: 1px solid #52a8ec;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(82 168 236 / 60%);
+}
+
+input:focus,
+input:focus-visible {
+  outline: none;
+}
+
+input::placeholder {
+  color: #d3d4d7;
 }
 
 /* Footer */
