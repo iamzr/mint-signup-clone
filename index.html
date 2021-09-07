@@ -21,7 +21,7 @@
       <button>Sign In</button>
     </header>
     <div>
-      <img />
+      <img src="intuit.png" />
       <div>
         <img />
         <img />
@@ -42,14 +42,17 @@
         placeholder="You'll verify this later"
         required
       />
+      <span class="red-alert">Please enter a valid email address.</span>
       <label for="phone">Phone <span>(recommended)</span></label>
       <input
-        type="number"
+        type="text"
         id="phone"
         placeholder="Helps with lost passwords and security"
       />
-      <span>Standard call, message, or data rates my apply</span>
-      <span>
+      <span class="mini-label"
+        >Standard call, message, or data rates my apply</span
+      >
+      <span class="orange-alert">
         We strongly recommend adding a phone number. This will help verify your
         account and keep it safe.
       </span>
@@ -59,20 +62,46 @@
         id="password"
         placeholder="Don't reuse an old password"
       />
+      <div class="password-requirements red-alert">
+        <div class="item">
+          <img src="cross.png" class="cross" /><span
+            >Use 8 or more characters</span
+          >
+        </div>
+        <div class="item">
+          <img src="cross.png" class="cross" /><span
+            >Use upper and lower case letters (e.g. Aa)</span
+          >
+        </div>
+        <div class="item">
+          <img src="cross.png" class="cross" /><span
+            >Use a number (e.g. 1234)</span
+          >
+        </div>
+        <div class="item">
+          <img src="cross.png" class="cross" /><span
+            >Use a symbol (e.g. !@#$)</span
+          >
+        </div>
+      </div>
       <label for="conform-password">Confirm Password</label>
       <input type="password" id="confirm-password" />
+      <div class="red-alert">
+        Confirm password field does not match the password field.
+      </div>
       <input type="submit" value="Create Account" />
-      <div>
+      <div class="create-account-terms">
         By selecting Create Account, you agree to our <a href="#">Terms</a> and
         have read and acknowledge our <a href="#">Global Privacy Statement</a>.
       </div>
+      <div class="captcha">
+        Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
+        <a href="#">Terms of Use</a>.
+      </div>
     </form>
-    <div>
-      Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
-      <a href="#">Terms of Use</a>.
-    </div>
+
     <div id="legal">
-      <div>
+      <div id="legal-privacy-security">
         <a href="#">Legal</a>
         <a href="#">Privacy</a>
         <a href="#">Security</a>
