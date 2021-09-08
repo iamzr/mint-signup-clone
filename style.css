@@ -18,6 +18,31 @@ a:hover {
   text-decoration: underline;
 }
 
+/* logos at top */
+#logo {
+  width: 118px;
+  height: 35px;
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+  padding-left: 5px;
+}
+
+.icon-label {
+  font-size: 20px;
+  line-height: 1.5;
+  width: 74px;
+  height: 22px;
+  color: #8a8c90;
+  vertical-align: middle;
+}
+
+li {
+  display: inline-block;
+}
+
 /* Form */
 form {
   border: 1px solid #c7c7c7;
