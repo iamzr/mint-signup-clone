@@ -112,6 +112,7 @@ input::placeholder {
   line-height: 1.2em;
   margin-top: 5px;
   margin-bottom: 5px;
+  visibility: hidden;
 }
 
 .orange-alert {
